@@ -14,6 +14,7 @@ ganancia_total = 0
 
 for n in range(0, N):
     ad = 0
+
     cotaSupMax = 0
     for i in range(0, d):
         if (num_sele[i] > 0):
@@ -33,7 +34,7 @@ for n in range(0, N):
 
 # Visualising the results
 plt.hist(anuncio_sele)
-plt.title('Histograma de seleccion de anuncios')
+plt.title('Histograma de selección de anuncios')
 plt.xlabel('Anuncio')
-plt.ylabel('Numero de veces en que el anuncio fue seleccionado')
+plt.ylabel('Número de veces en que el anuncio fue seleccionado')
 plt.show()
