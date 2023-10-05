@@ -6,18 +6,13 @@ usuarios = pd.read_excel("/Users/danimathud/Documents/GitHub/PythonMachineLearni
 curp =  []
 
 años_deseados =[93,94,95,96,97,98,99,0,1,2,3,4,5,6,7,8,9,10,11]
-
-años = []
 filtrados= []
-indices = []
-
 for i in range(0,2017):
     if type(usuarios["CURP"][i]) == int or len(usuarios["CURP"][i]) != 18:
         usuarios = usuarios.drop(i, axis = 0)
         
 usuarios.reset_index(drop = True, inplace = True)
 
-#cont = 0
 for j in range(0,len(usuarios)):
     cont = 0
     for i in range(0,10):
